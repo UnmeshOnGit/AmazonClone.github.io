@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Commerce</title>
+    <script src="https://kit.fontawesome.com/9244c05649.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="images/main logo.png" height="25px" alt="">
+            </div>
+            <div class="search-bar">
+                <input type="text" placeholder="Search">
+                <i onclick="createHorizontalCard()" class="fa-solid fa-magnifying-glass fa-2x"></i>
+            </div>
+            <div class="seller">
+                <h5>Are you</h5>
+                <h5>a seller?</h5>
+            </div>
+            <div class="orders">
+                <p>Returns</p>
+                <h4>& Orders</h4>
+            </div>
+            <div class="cart">
+                <i class="fa-solid fa-cart-shopping fa-2x"></i>
+                Cart
+            </div>
+        </nav>
+        <div class="cart-item">
+            <div class="heading">
+                <h3>Your Cart</h3>
+                <i id="closeBtn" class="fa-solid fa-xmark fa-2x"></i>
+            </div>
+            <div class="cart-product">
+                <div class="product-in-cart">
+                    <img src="images/item-5.jpg" height="40px" alt="">
+                    <div id="product-name">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, magnam.
+                    </div>
+                    <div class="details">
+                        <div class="quantity">Qty. 2</div>
+                        <div class="price">₹499</div>
+                    </div>
+                </div>
+                <div class="product-in-cart">
+                    <img src="images/item-5.jpg" height="40px" alt="">
+                    <div id="product-name">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, magnam.
+                    </div>
+                    <div class="details">
+                        <div class="quantity">Qty. 2</div>
+                        <div class="price">₹499</div>
+                    </div>
+                </div>
+                <div class="product-in-cart">
+                    <img src="images/item-5.jpg" height="40px" alt="">
+                    <div id="product-name">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, magnam.
+                    </div>
+                    <div class="details">
+                        <div class="quantity">Qty. 2</div>
+                        <div class="price">₹499</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="list-product">
+            <form action="" id="product-form">
+                <h3 style="text-align: center;" >List your Product Here!</h3>
+                <table>
+                    <tr>
+                        <td><p>Seller Name:</p></td>
+                        <td><input type="text" id="seller-name"></td>
+                    </tr>
+                    <tr>
+                        <td><p>Product Name:</p> </td>
+                        <td><input type="text" name="" id="product-name" maxlength="40"></td>
+                    </tr>
+                    <tr>
+                        <td><p>Product Price: </p></td>
+                        <td><input type="number" name="" id="product-price"></td>
+                    </tr>
+                    <tr>
+                        <td><p>Product Description:</p> </td>
+                        <td><input type="text" name="" id="product-desc" maxlength="30" ></td>
+                    </tr>
+                    <tr>
+                        <td> <p>Image of Product: </p> </td>
+                        <td><input type="file" id="product-image" ></td>
+                    </tr>
+                    <tr>
+                        <td>
+                        </td>
+                        <td>
+                            <input type="submit" name="" id="submit">
+                            <input type="reset" id="reset">
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+        <section class="browse">
+            <ul>
+                <i class="fa-solid fa-bars"></i>
+                <li>Home</li>
+                <li>Sell</li>
+                <li>Gift Cards</li>
+                <li>Today's Deal</li>
+                <li>Coupons</li>
+                <li>Electronics</li>
+                <li>Beauty</li>
+                <li>Clothing</li>
+            </ul>
+        </section>
+    </header>
+    <main>
+        <section class="sidebar">
+            <div class="account-holder">
+                <i class="fa-solid fa-user fa-2x"></i>
+                <p>Hello, User</p>
+            </div>
+            <div class="trending">
+                <h2>Trending</h2>
+                <li>Best Seller</li>
+                <li>Best Seller</li>
+                <li>Best Seller</li>
+                <li>Best Seller</li>
+                <li>Best Seller</li>
+            </div>
+            <hr>
+            <div class="category">
+                <h2>Shop by Category</h2>
+                <li>Electronics</li>
+                <li>Electronics</li>
+                <li>Electronics</li>
+                <li>Electronics</li>
+                <li>Electronics</li>
+            </div>
+            <hr>
+            <div class="setting">
+                <h2>Help & Setting</h2>
+                <li>Account</li>
+                <li>Account</li>
+                <li>Account</li>
+                <li>Account</li>
+                <li>Account</li>
+            </div>
+            <hr>
+        </section>
+        <section class="content">
+            <div class="horizontal-card">
+                <div class="item">
+                    <div class="top">
+                        <img src="images/item-1.jpg" height="150px" alt="">
+                    </div>
+                    <div class="bottom">
+                        <div class="name-of-product">Acer 22inch FHD Monitor </div>
+                        <div class="ratings">
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-solid fa-star"></i>
+                            <i class="fa-regular fa-star"></i>
+                            <i>4 Star rating</i>
+                        </div>
+                        <div class="price">₹400</div>
+                        <div class="description">
+                            <p id="seller-name-card" >Microtech</p>
+                            FREE Delivery over ₹499. 
+                            Fulfilled by Amazon.   
+                        </div>
+                        <div class="add-to-cart">Add to Cart</div>
+                    </div>
+                </div>      
+            </div>
+            <div class="vertical-cards">
+                <div class="cards">
+                    <!-- <h4>Heading</h4> -->
+                    <div class="grid-item">
+                        <img src="images/item-1.jpg" alt="">
+                        <div class="name" >Lorem ipsum dolor sit amet.</div>
+                        <div class="add-to-cart">Add to Cart</div>
+                    </div>
+                    <div class="grid-item">
+                        <img src="images/item-1.jpg" alt="">
+                        <div class="name">Lorem ipsum dolor sit amet.</div>
+                        <div class="add-to-cart">Add to Cart</div>
+                    </div>
+                    <div class="grid-item">
+                        <img src="images/item-1.jpg" alt="">
+                        <div class="name">Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.</div>
+                        <div class="add-to-cart">Add to Cart</div>
+                    </div>
+                    <div class="grid-item">
+                        <img src="images/item-1.jpg" alt="">
+                        <div class="name">Lorem ipsum dolor sit amet.</div>
+                        <div class="add-to-cart">Add to Cart</div>
+                    </div>
+                </div>
+                <div class="cards">
+                    <div class="grid-item">
+                        <img src="images/item-2.jpg" width="150px" alt="">
+                        <div class="name" >Lorem ipsum dolor sit amet.</div>
+                        <div class="add-to-cart">Add to Cart</div>
+                    </div>
+                    <div class="grid-item">
+                        <img src="images/item-3.jpg" width="150px" alt="">
+                        <div class="name">Lorem ipsum dolor sit amet.</div>
+                        <div class="add-to-cart">Add to Cart</div>
+                    </div>
+                    <div class="grid-item">
+                        <img src="images/item-4.jpg" width="150px" alt="">
+                        <div class="name">Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet.</div>
+                        <div class="add-to-cart">Add to Cart</div>
+                    </div>
+                    <div class="grid-item">
+                        <img src="images/item-5.jpg" width="150px" alt="">
+                        <div class="name">Lorem ipsum dolor sit amet.</div>
+                        <div class="add-to-cart">Add to Cart</div>
+                    </div>
+                </div>
+                <div class="cards">
+                    <div class="grid-item">
+                        <img src="images/item-6.jpg" width="150px" alt="">
+                        <div class="name">Lorem ipsum dolor sit amet.</div>
+                        <div class="add-to-cart">Add to Cart</div>
+                    </div>
+                    <div class="grid-item">
+                        <img src="images/item-7.jpg" width="150px" alt="">
+                        <div class="name">Lorem ipsum dolor sit amet.</div>
+                        <div class="add-to-cart">Add to Cart</div>
+                    </div>
+                    <div class="grid-item">
+                        <img src="images/item-8.jpg" width="150px" alt="">
+                        <div class="name">Lorem ipsum dolor sit amet.</div>
+                        <div class="add-to-cart">Add to Cart</div>
+                    </div>
+                    <div class="grid-item">
+                        <img src="images/item-9.jpg" width="150px" alt="">
+                        <div class="name">Lorem ipsum dolor sit amet.</div>
+                        <div class="add-to-cart">Add to Cart</div>
+                    </div>
+                </div>
+            </div>
+            
+        </section>
+    </main>
+    <footer>
+        <div class="top">
+            <div class="about-us">
+                <h2>Get to Know Us</h2>
+                <li>About Us</li>
+                <li>Careers</li>
+                <li>Press Releases</li>
+                <li>Amazon Science</li>
+            </div>
+            <div class="connect-us">
+                <h2>Connect with Us</h2>
+                <li>Facebook</li>
+                <li>Instagram</li>
+                <li>Twitter</li>
+                <li>Linkdin</li>
+            </div>
+            <div class="help">
+                <h2>Let Us Help You</h2>
+                <li>COVID-19 and Amazon</li>
+                <li>Your Account</li>
+                <li>Return center</li>
+                <li>Amazon App Download</li>
+                <li>Help</li>
+            </div>
+        </div>
+        <hr>
+        <div class="bottom">
+            Australia &nbsp;&nbsp;
+            Brazil &nbsp;&nbsp;
+            Canada &nbsp;&nbsp;
+            China &nbsp;&nbsp;
+            France &nbsp;&nbsp;
+            Germany &nbsp;&nbsp;
+            Italy &nbsp;&nbsp;
+            Japan &nbsp;&nbsp;
+            Mexico &nbsp;&nbsp;
+            Netherlands &nbsp;&nbsp;
+            Poland &nbsp;&nbsp;
+            Singapore &nbsp;&nbsp;
+            Spain &nbsp;&nbsp;
+            Turkey &nbsp;&nbsp;
+            United Arab Emirates &nbsp;&nbsp;
+            United Kingdom &nbsp;&nbsp;
+            United States
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="script.js" ></script>
+</body>
+
+</html>
